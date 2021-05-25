@@ -203,6 +203,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         {
             delete sand;
         }
+        if (background != NULL)
+        {
+          delete background;
+        }
         PostQuitMessage(0);
         break;
     default:
